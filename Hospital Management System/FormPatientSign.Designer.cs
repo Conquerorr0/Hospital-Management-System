@@ -86,6 +86,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(142, 31);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnSignIn
             // 
@@ -98,6 +99,7 @@
             this.btnSignIn.TabIndex = 4;
             this.btnSignIn.Text = "GİRİŞ YAP";
             this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // lblRegister
             // 
