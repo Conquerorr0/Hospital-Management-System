@@ -135,47 +135,50 @@
             this.lblInfoSetUp.TabIndex = 8;
             this.lblInfoSetUp.TabStop = true;
             this.lblInfoSetUp.Text = "Bilgilerimi Düzenle";
+            this.lblInfoSetUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblInfoSetUp_LinkClicked);
             // 
             // btnBooking
             // 
             this.btnBooking.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnBooking.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBooking.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBooking.Location = new System.Drawing.Point(19, 300);
+            this.btnBooking.Location = new System.Drawing.Point(10, 309);
             this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(192, 34);
+            this.btnBooking.Size = new System.Drawing.Size(223, 34);
             this.btnBooking.TabIndex = 7;
             this.btnBooking.Text = "RANDEVU AL";
             this.btnBooking.UseVisualStyleBackColor = false;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // txtComplaint
             // 
-            this.txtComplaint.Location = new System.Drawing.Point(91, 128);
+            this.txtComplaint.Location = new System.Drawing.Point(84, 128);
             this.txtComplaint.Name = "txtComplaint";
-            this.txtComplaint.Size = new System.Drawing.Size(120, 166);
+            this.txtComplaint.Size = new System.Drawing.Size(149, 166);
             this.txtComplaint.TabIndex = 6;
             this.txtComplaint.Text = "";
             // 
             // cmbDoctor
             // 
             this.cmbDoctor.FormattingEnabled = true;
-            this.cmbDoctor.Location = new System.Drawing.Point(91, 81);
+            this.cmbDoctor.Location = new System.Drawing.Point(84, 81);
             this.cmbDoctor.Name = "cmbDoctor";
-            this.cmbDoctor.Size = new System.Drawing.Size(120, 31);
+            this.cmbDoctor.Size = new System.Drawing.Size(149, 31);
             this.cmbDoctor.TabIndex = 5;
             // 
             // cmbField
             // 
             this.cmbField.FormattingEnabled = true;
-            this.cmbField.Location = new System.Drawing.Point(91, 40);
+            this.cmbField.Location = new System.Drawing.Point(84, 40);
             this.cmbField.Name = "cmbField";
-            this.cmbField.Size = new System.Drawing.Size(120, 31);
+            this.cmbField.Size = new System.Drawing.Size(149, 31);
             this.cmbField.TabIndex = 4;
+            this.cmbField.SelectedIndexChanged += new System.EventHandler(this.cmbField_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 128);
+            this.label5.Location = new System.Drawing.Point(8, 128);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 23);
             this.label5.TabIndex = 3;
@@ -184,7 +187,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 84);
+            this.label4.Location = new System.Drawing.Point(10, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 23);
             this.label4.TabIndex = 2;
@@ -193,7 +196,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 43);
+            this.label6.Location = new System.Drawing.Point(21, 43);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 0;
@@ -213,11 +216,15 @@
             // 
             // dataAppointmentHistory
             // 
+            this.dataAppointmentHistory.AllowUserToAddRows = false;
+            this.dataAppointmentHistory.AllowUserToDeleteRows = false;
             this.dataAppointmentHistory.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataAppointmentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataAppointmentHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataAppointmentHistory.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataAppointmentHistory.Location = new System.Drawing.Point(3, 27);
             this.dataAppointmentHistory.Name = "dataAppointmentHistory";
+            this.dataAppointmentHistory.ReadOnly = true;
             this.dataAppointmentHistory.Size = new System.Drawing.Size(812, 247);
             this.dataAppointmentHistory.TabIndex = 0;
             // 
@@ -235,11 +242,14 @@
             // 
             // dataActiveAppointments
             // 
+            this.dataActiveAppointments.AllowUserToAddRows = false;
+            this.dataActiveAppointments.AllowUserToDeleteRows = false;
             this.dataActiveAppointments.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataActiveAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataActiveAppointments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataActiveAppointments.Location = new System.Drawing.Point(3, 27);
             this.dataActiveAppointments.Name = "dataActiveAppointments";
+            this.dataActiveAppointments.ReadOnly = true;
             this.dataActiveAppointments.Size = new System.Drawing.Size(812, 229);
             this.dataActiveAppointments.TabIndex = 0;
             // 
@@ -254,10 +264,12 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormPatientDetail";
             this.Text = "Hasta Detay Ekranı";
+            this.Load += new System.EventHandler(this.FormPatientDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -55,6 +55,7 @@
             this.btnRegister.TabIndex = 30;
             this.btnRegister.Text = "GÜNCELLE";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // cmbGender
             // 
@@ -195,6 +196,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormPatientInfoSet";
             this.Text = "Bilgi Düzenleme Ekranı";
+            this.Load += new System.EventHandler(this.FormPatientInfoSet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,7 +39,7 @@ namespace Hospital_Management_System
 
             if (reader.Read())
             {
-                FormPatientDetail detail = new FormPatientDetail();
+                FormPatientDetail detail = new FormPatientDetail(Convert.ToInt16(reader["id"]));
                 detail.Show();
                 this.Hide();
             }
