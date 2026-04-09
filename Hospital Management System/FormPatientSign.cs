@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Hospital_Management_System
 {
-    public partial class Form1 : Form
+    public partial class FormPatientSign : Form
     {
-        public Form1()
+        public FormPatientSign()
         {
             InitializeComponent();
+        }
+
+        private void lblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormPatientRegister formPatient = new FormPatientRegister();
+            formPatient.Show();
+            this.Hide();
         }
     }
 }

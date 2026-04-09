@@ -46,14 +46,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormAnnouncment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormAnnouncment.Designer.cs">
+      <DependentUpon>FormAnnouncment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoctorDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoctorDetail.Designer.cs">
+      <DependentUpon>FormDoctorDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoctorInfoSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoctorInfoSet.Designer.cs">
+      <DependentUpon>FormDoctorInfoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoctorSingIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoctorSingIn.Designer.cs">
+      <DependentUpon>FormDoctorSingIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPatientInfoSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientInfoSet.Designer.cs">
+      <DependentUpon>FormPatientInfoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientDetail.Designer.cs">
+      <DependentUpon>FormPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPatientRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientRegister.Designer.cs">
+      <DependentUpon>FormPatientRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoleScreen.Designer.cs">
+      <DependentUpon>FormRoleScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPatientSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientSign.Designer.cs">
+      <DependentUpon>FormPatientSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecretaryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecretaryDetail.Designer.cs">
+      <DependentUpon>FormSecretaryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecretarySignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecretarySignIn.Designer.cs">
+      <DependentUpon>FormSecretarySignIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnnouncment.resx">
+      <DependentUpon>FormAnnouncment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoctorDetail.resx">
+      <DependentUpon>FormDoctorDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoctorInfoSet.resx">
+      <DependentUpon>FormDoctorInfoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoctorSingIn.resx">
+      <DependentUpon>FormDoctorSingIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPatientInfoSet.resx">
+      <DependentUpon>FormPatientInfoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPatientDetail.resx">
+      <DependentUpon>FormPatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPatientRegister.resx">
+      <DependentUpon>FormPatientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoleScreen.resx">
+      <DependentUpon>FormRoleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPatientSign.resx">
+      <DependentUpon>FormPatientSign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecretaryDetail.resx">
+      <DependentUpon>FormSecretaryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecretarySignIn.resx">
+      <DependentUpon>FormSecretarySignIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
