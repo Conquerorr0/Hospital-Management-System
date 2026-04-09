@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPatientDetail));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblInfoSetUp = new System.Windows.Forms.LinkLabel();
             this.btnBooking = new System.Windows.Forms.Button();
             this.txtComplaint = new System.Windows.Forms.RichTextBox();
             this.cmbDoctor = new System.Windows.Forms.ComboBox();
@@ -45,7 +47,6 @@
             this.dataAppointmentHistory = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataActiveAppointments = new System.Windows.Forms.DataGridView();
-            this.lblInfoSetUp = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,6 +124,17 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
+            // 
+            // lblInfoSetUp
+            // 
+            this.lblInfoSetUp.AutoSize = true;
+            this.lblInfoSetUp.LinkColor = System.Drawing.Color.RoyalBlue;
+            this.lblInfoSetUp.Location = new System.Drawing.Point(6, 346);
+            this.lblInfoSetUp.Name = "lblInfoSetUp";
+            this.lblInfoSetUp.Size = new System.Drawing.Size(167, 23);
+            this.lblInfoSetUp.TabIndex = 8;
+            this.lblInfoSetUp.TabStop = true;
+            this.lblInfoSetUp.Text = "Bilgilerimi Düzenle";
             // 
             // btnBooking
             // 
@@ -231,17 +243,6 @@
             this.dataActiveAppointments.Size = new System.Drawing.Size(812, 229);
             this.dataActiveAppointments.TabIndex = 0;
             // 
-            // lblInfoSetUp
-            // 
-            this.lblInfoSetUp.AutoSize = true;
-            this.lblInfoSetUp.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.lblInfoSetUp.Location = new System.Drawing.Point(6, 346);
-            this.lblInfoSetUp.Name = "lblInfoSetUp";
-            this.lblInfoSetUp.Size = new System.Drawing.Size(167, 23);
-            this.lblInfoSetUp.TabIndex = 8;
-            this.lblInfoSetUp.TabStop = true;
-            this.lblInfoSetUp.Text = "Bilgilerimi Düzenle";
-            // 
             // FormPatientDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -253,6 +254,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormPatientDetail";
             this.Text = "Hasta Detay Ekranı";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPatientInfoSet));
             this.btnRegister = new System.Windows.Forms.Button();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -170,7 +171,7 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "T.C. Kimlik No:";
             // 
-            // FormInfoSetUp
+            // FormPatientInfoSet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,8 +191,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Name = "FormInfoSetUp";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Name = "FormPatientInfoSet";
             this.Text = "Bilgi Düzenleme Ekranı";
             this.ResumeLayout(false);
             this.PerformLayout();

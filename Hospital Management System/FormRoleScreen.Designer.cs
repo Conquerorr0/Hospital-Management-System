@@ -60,9 +60,11 @@
             this.btnDoctor.Size = new System.Drawing.Size(204, 185);
             this.btnDoctor.TabIndex = 1;
             this.btnDoctor.UseVisualStyleBackColor = true;
+            this.btnDoctor.Click += new System.EventHandler(this.btnDoctor_Click);
             // 
             // btnSecretary
             // 
+            this.btnSecretary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSecretary.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSecretary.BackgroundImage")));
             this.btnSecretary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSecretary.Location = new System.Drawing.Point(597, 320);
@@ -70,6 +72,7 @@
             this.btnSecretary.Size = new System.Drawing.Size(204, 185);
             this.btnSecretary.TabIndex = 2;
             this.btnSecretary.UseVisualStyleBackColor = true;
+            this.btnSecretary.Click += new System.EventHandler(this.btnSecretary_Click);
             // 
             // lblPatient
             // 
@@ -129,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(874, 585);
             this.Controls.Add(this.lblTitle);
@@ -140,7 +144,9 @@
             this.Controls.Add(this.btnDoctor);
             this.Controls.Add(this.btnPatient);
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "FormRoleScreen";
             this.Text = "Rol Seçim Ekranı";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -46,11 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="FormAnnouncment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAnnouncment.Designer.cs">
       <DependentUpon>FormAnnouncment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAppointmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAppointmentList.Designer.cs">
+      <DependentUpon>FormAppointmentList.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDoctorDetail.cs">
       <SubType>Form</SubType>
@@ -64,11 +71,23 @@
     <Compile Include="FormDoctorInfoSet.Designer.cs">
       <DependentUpon>FormDoctorInfoSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoctorPanel.Designer.cs">
+      <DependentUpon>FormDoctorPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDoctorSingIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDoctorSingIn.Designer.cs">
       <DependentUpon>FormDoctorSingIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormField.Designer.cs">
+      <DependentUpon>FormField.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPatientInfoSet.cs">
       <SubType>Form</SubType>
@@ -117,14 +136,23 @@
     <EmbeddedResource Include="FormAnnouncment.resx">
       <DependentUpon>FormAnnouncment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAppointmentList.resx">
+      <DependentUpon>FormAppointmentList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDoctorDetail.resx">
       <DependentUpon>FormDoctorDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDoctorInfoSet.resx">
       <DependentUpon>FormDoctorInfoSet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDoctorPanel.resx">
+      <DependentUpon>FormDoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDoctorSingIn.resx">
       <DependentUpon>FormDoctorSingIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormField.resx">
+      <DependentUpon>FormField.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPatientInfoSet.resx">
       <DependentUpon>FormPatientInfoSet.cs</DependentUpon>

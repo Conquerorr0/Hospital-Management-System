@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDoctorDetail));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,9 +39,9 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataAppointmentsList = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnSetInfo = new System.Windows.Forms.Button();
             this.btnAnnouncment = new System.Windows.Forms.Button();
             this.btnInternet = new System.Windows.Forms.Button();
+            this.btnSetInfo = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,17 +157,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Hızlı Erişim";
             // 
-            // btnSetInfo
-            // 
-            this.btnSetInfo.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSetInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSetInfo.Location = new System.Drawing.Point(11, 30);
-            this.btnSetInfo.Name = "btnSetInfo";
-            this.btnSetInfo.Size = new System.Drawing.Size(222, 35);
-            this.btnSetInfo.TabIndex = 0;
-            this.btnSetInfo.Text = "BİLGİ DÜZENLE";
-            this.btnSetInfo.UseVisualStyleBackColor = false;
-            // 
             // btnAnnouncment
             // 
             this.btnAnnouncment.BackColor = System.Drawing.SystemColors.Highlight;
@@ -189,6 +179,17 @@
             this.btnInternet.Text = "İNTERNET";
             this.btnInternet.UseVisualStyleBackColor = false;
             // 
+            // btnSetInfo
+            // 
+            this.btnSetInfo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSetInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSetInfo.Location = new System.Drawing.Point(11, 30);
+            this.btnSetInfo.Name = "btnSetInfo";
+            this.btnSetInfo.Size = new System.Drawing.Size(222, 35);
+            this.btnSetInfo.TabIndex = 0;
+            this.btnSetInfo.Text = "BİLGİ DÜZENLE";
+            this.btnSetInfo.UseVisualStyleBackColor = false;
+            // 
             // FormDoctorDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -200,6 +201,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FormDoctorDetail";
             this.Text = "Doktor Detay Ekranı";

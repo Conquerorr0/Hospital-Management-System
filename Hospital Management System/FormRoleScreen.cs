@@ -23,5 +23,19 @@ namespace Hospital_Management_System
             formPatient.Show();
             this.Hide();
         }
+
+        private void btnDoctor_Click(object sender, EventArgs e)
+        {
+            FormDoctorSingIn formDoctor = new FormDoctorSingIn();
+            formDoctor.Show();
+            this.Hide();
+        }
+
+        private void btnSecretary_Click(object sender, EventArgs e)
+        {
+            FormSecretarySignIn formSecretary = new FormSecretarySignIn();
+            formSecretary.Show();
+            this.Hide();
+        }
     }
 }

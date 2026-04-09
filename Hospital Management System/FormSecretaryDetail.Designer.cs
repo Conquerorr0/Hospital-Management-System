@@ -28,42 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSecretaryDetail));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtAnnouncment = new System.Windows.Forms.RichTextBox();
             this.btnCreateAnnouncment = new System.Windows.Forms.Button();
+            this.txtAnnouncment = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnUpdateAppointment = new System.Windows.Forms.Button();
+            this.btnCreateAppointment = new System.Windows.Forms.Button();
+            this.cbStatus = new System.Windows.Forms.CheckBox();
+            this.txtTC = new System.Windows.Forms.MaskedTextBox();
+            this.cmbDoctor = new System.Windows.Forms.ComboBox();
+            this.cmbField = new System.Windows.Forms.ComboBox();
+            this.txtTime = new System.Windows.Forms.MaskedTextBox();
+            this.txtDate = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtDate = new System.Windows.Forms.MaskedTextBox();
-            this.txtTime = new System.Windows.Forms.MaskedTextBox();
-            this.cmbField = new System.Windows.Forms.ComboBox();
-            this.cmbDoctor = new System.Windows.Forms.ComboBox();
-            this.txtTC = new System.Windows.Forms.MaskedTextBox();
-            this.cbStatus = new System.Windows.Forms.CheckBox();
-            this.btnCreateAppointment = new System.Windows.Forms.Button();
-            this.btnUpdateAppointment = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnDoctorPanel = new System.Windows.Forms.Button();
-            this.btnFieldPanel = new System.Windows.Forms.Button();
             this.btnOppointmentPanel = new System.Windows.Forms.Button();
+            this.btnFieldPanel = new System.Windows.Forms.Button();
+            this.btnDoctorPanel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
@@ -132,14 +133,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Duyuru Oluştur";
             // 
-            // txtAnnouncment
-            // 
-            this.txtAnnouncment.Location = new System.Drawing.Point(6, 30);
-            this.txtAnnouncment.Name = "txtAnnouncment";
-            this.txtAnnouncment.Size = new System.Drawing.Size(227, 197);
-            this.txtAnnouncment.TabIndex = 0;
-            this.txtAnnouncment.Text = "";
-            // 
             // btnCreateAnnouncment
             // 
             this.btnCreateAnnouncment.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -151,6 +144,14 @@
             this.btnCreateAnnouncment.TabIndex = 8;
             this.btnCreateAnnouncment.Text = "OLUŞTUR";
             this.btnCreateAnnouncment.UseVisualStyleBackColor = false;
+            // 
+            // txtAnnouncment
+            // 
+            this.txtAnnouncment.Location = new System.Drawing.Point(6, 30);
+            this.txtAnnouncment.Name = "txtAnnouncment";
+            this.txtAnnouncment.Size = new System.Drawing.Size(227, 197);
+            this.txtAnnouncment.TabIndex = 0;
+            this.txtAnnouncment.Text = "";
             // 
             // groupBox3
             // 
@@ -176,23 +177,91 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
             // 
-            // label2
+            // btnUpdateAppointment
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Tarih:";
+            this.btnUpdateAppointment.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnUpdateAppointment.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdateAppointment.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnUpdateAppointment.Location = new System.Drawing.Point(31, 314);
+            this.btnUpdateAppointment.Name = "btnUpdateAppointment";
+            this.btnUpdateAppointment.Size = new System.Drawing.Size(192, 34);
+            this.btnUpdateAppointment.TabIndex = 16;
+            this.btnUpdateAppointment.Text = "GÜNCELLE";
+            this.btnUpdateAppointment.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // btnCreateAppointment
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 23);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Saat:";
+            this.btnCreateAppointment.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCreateAppointment.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCreateAppointment.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCreateAppointment.Location = new System.Drawing.Point(31, 274);
+            this.btnCreateAppointment.Name = "btnCreateAppointment";
+            this.btnCreateAppointment.Size = new System.Drawing.Size(192, 34);
+            this.btnCreateAppointment.TabIndex = 9;
+            this.btnCreateAppointment.Text = "KAYDET";
+            this.btnCreateAppointment.UseVisualStyleBackColor = false;
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.AutoSize = true;
+            this.cbStatus.Location = new System.Drawing.Point(99, 241);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(85, 27);
+            this.cbStatus.TabIndex = 15;
+            this.cbStatus.Text = "Durum";
+            this.cbStatus.UseVisualStyleBackColor = true;
+            // 
+            // txtTC
+            // 
+            this.txtTC.Location = new System.Drawing.Point(99, 201);
+            this.txtTC.Mask = "00000000000";
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(124, 31);
+            this.txtTC.TabIndex = 14;
+            this.txtTC.ValidatingType = typeof(int);
+            // 
+            // cmbDoctor
+            // 
+            this.cmbDoctor.FormattingEnabled = true;
+            this.cmbDoctor.Location = new System.Drawing.Point(99, 164);
+            this.cmbDoctor.Name = "cmbDoctor";
+            this.cmbDoctor.Size = new System.Drawing.Size(124, 31);
+            this.cmbDoctor.TabIndex = 13;
+            // 
+            // cmbField
+            // 
+            this.cmbField.FormattingEnabled = true;
+            this.cmbField.Location = new System.Drawing.Point(99, 127);
+            this.cmbField.Name = "cmbField";
+            this.cmbField.Size = new System.Drawing.Size(124, 31);
+            this.cmbField.TabIndex = 12;
+            // 
+            // txtTime
+            // 
+            this.txtTime.Location = new System.Drawing.Point(99, 90);
+            this.txtTime.Mask = "00:00";
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(124, 31);
+            this.txtTime.TabIndex = 11;
+            this.txtTime.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDate
+            // 
+            this.txtDate.Location = new System.Drawing.Point(99, 53);
+            this.txtDate.Mask = "00/00/0000";
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(124, 31);
+            this.txtDate.TabIndex = 10;
+            this.txtDate.ValidatingType = typeof(System.DateTime);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(15, 204);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 23);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "T.C. No:";
             // 
             // label5
             // 
@@ -212,91 +281,23 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Branş:";
             // 
-            // label10
+            // label4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(15, 204);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 23);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "T.C. No:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 23);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Saat:";
             // 
-            // txtDate
+            // label2
             // 
-            this.txtDate.Location = new System.Drawing.Point(99, 53);
-            this.txtDate.Mask = "00/00/0000";
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(124, 31);
-            this.txtDate.TabIndex = 10;
-            this.txtDate.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtTime
-            // 
-            this.txtTime.Location = new System.Drawing.Point(99, 90);
-            this.txtTime.Mask = "00:00";
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(124, 31);
-            this.txtTime.TabIndex = 11;
-            this.txtTime.ValidatingType = typeof(System.DateTime);
-            // 
-            // cmbField
-            // 
-            this.cmbField.FormattingEnabled = true;
-            this.cmbField.Location = new System.Drawing.Point(99, 127);
-            this.cmbField.Name = "cmbField";
-            this.cmbField.Size = new System.Drawing.Size(124, 31);
-            this.cmbField.TabIndex = 12;
-            // 
-            // cmbDoctor
-            // 
-            this.cmbDoctor.FormattingEnabled = true;
-            this.cmbDoctor.Location = new System.Drawing.Point(99, 164);
-            this.cmbDoctor.Name = "cmbDoctor";
-            this.cmbDoctor.Size = new System.Drawing.Size(124, 31);
-            this.cmbDoctor.TabIndex = 13;
-            // 
-            // txtTC
-            // 
-            this.txtTC.Location = new System.Drawing.Point(99, 201);
-            this.txtTC.Mask = "00000000000";
-            this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(124, 31);
-            this.txtTC.TabIndex = 14;
-            this.txtTC.ValidatingType = typeof(int);
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.AutoSize = true;
-            this.cbStatus.Location = new System.Drawing.Point(99, 241);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(85, 27);
-            this.cbStatus.TabIndex = 15;
-            this.cbStatus.Text = "Durum";
-            this.cbStatus.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateAppointment
-            // 
-            this.btnCreateAppointment.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCreateAppointment.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCreateAppointment.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCreateAppointment.Location = new System.Drawing.Point(31, 274);
-            this.btnCreateAppointment.Name = "btnCreateAppointment";
-            this.btnCreateAppointment.Size = new System.Drawing.Size(192, 34);
-            this.btnCreateAppointment.TabIndex = 9;
-            this.btnCreateAppointment.Text = "KAYDET";
-            this.btnCreateAppointment.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdateAppointment
-            // 
-            this.btnUpdateAppointment.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnUpdateAppointment.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUpdateAppointment.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnUpdateAppointment.Location = new System.Drawing.Point(31, 314);
-            this.btnUpdateAppointment.Name = "btnUpdateAppointment";
-            this.btnUpdateAppointment.Size = new System.Drawing.Size(192, 34);
-            this.btnUpdateAppointment.TabIndex = 16;
-            this.btnUpdateAppointment.Text = "GÜNCELLE";
-            this.btnUpdateAppointment.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 23);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Tarih:";
             // 
             // groupBox4
             // 
@@ -310,6 +311,17 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Branşlar";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(407, 184);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dataGridView3);
@@ -321,17 +333,6 @@
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Doktorlar";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(407, 184);
-            this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView3
             // 
@@ -358,17 +359,17 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
-            // btnDoctorPanel
+            // btnOppointmentPanel
             // 
-            this.btnDoctorPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDoctorPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDoctorPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDoctorPanel.Location = new System.Drawing.Point(27, 44);
-            this.btnDoctorPanel.Name = "btnDoctorPanel";
-            this.btnDoctorPanel.Size = new System.Drawing.Size(192, 34);
-            this.btnDoctorPanel.TabIndex = 9;
-            this.btnDoctorPanel.Text = "DOKTOR PANELİ";
-            this.btnDoctorPanel.UseVisualStyleBackColor = false;
+            this.btnOppointmentPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnOppointmentPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOppointmentPanel.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnOppointmentPanel.Location = new System.Drawing.Point(685, 44);
+            this.btnOppointmentPanel.Name = "btnOppointmentPanel";
+            this.btnOppointmentPanel.Size = new System.Drawing.Size(192, 34);
+            this.btnOppointmentPanel.TabIndex = 11;
+            this.btnOppointmentPanel.Text = "RANDEVU LİSTESİ";
+            this.btnOppointmentPanel.UseVisualStyleBackColor = false;
             // 
             // btnFieldPanel
             // 
@@ -382,17 +383,17 @@
             this.btnFieldPanel.Text = "BRANŞ PANELİ";
             this.btnFieldPanel.UseVisualStyleBackColor = false;
             // 
-            // btnOppointmentPanel
+            // btnDoctorPanel
             // 
-            this.btnOppointmentPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnOppointmentPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOppointmentPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnOppointmentPanel.Location = new System.Drawing.Point(685, 44);
-            this.btnOppointmentPanel.Name = "btnOppointmentPanel";
-            this.btnOppointmentPanel.Size = new System.Drawing.Size(192, 34);
-            this.btnOppointmentPanel.TabIndex = 11;
-            this.btnOppointmentPanel.Text = "RANDEVU LİSTESİ";
-            this.btnOppointmentPanel.UseVisualStyleBackColor = false;
+            this.btnDoctorPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDoctorPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDoctorPanel.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDoctorPanel.Location = new System.Drawing.Point(27, 44);
+            this.btnDoctorPanel.Name = "btnDoctorPanel";
+            this.btnDoctorPanel.Size = new System.Drawing.Size(192, 34);
+            this.btnDoctorPanel.TabIndex = 9;
+            this.btnDoctorPanel.Text = "DOKTOR PANELİ";
+            this.btnDoctorPanel.UseVisualStyleBackColor = false;
             // 
             // FormSecretaryDetail
             // 
@@ -407,7 +408,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormSecretaryDetail";
             this.Text = "Sekreter Detay Ekranı";
             this.groupBox1.ResumeLayout(false);
@@ -416,8 +418,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
