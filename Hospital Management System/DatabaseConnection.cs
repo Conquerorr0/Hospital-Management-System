@@ -12,7 +12,7 @@ namespace Hospital_Management_System
         //Data Source=kerem\SQLEXPRESS;Initial Catalog=HospitalManagementSystem;Integrated Security=True;Trust Server Certificate=True
         public SqlConnection connection()
         {
-            SqlConnection conn = new SqlConnection("Data Source=kerem\\SQLEXPRESS;Initial Catalog=HospitalManagementSystem;Integrated Security=True;Trust Server Certificate=True");
+            SqlConnection conn = new SqlConnection("Data Source=kerem\\SQLEXPRESS;Initial Catalog=HospitalManagementSystem;Integrated Security=True;");
             conn.Open();
             return conn;
         }

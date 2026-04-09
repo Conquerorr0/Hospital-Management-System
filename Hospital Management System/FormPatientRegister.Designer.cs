@@ -167,15 +167,17 @@
             this.btnRegister.Location = new System.Drawing.Point(270, 255);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(142, 34);
-            this.btnRegister.TabIndex = 17;
+            this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "KAYIT OL";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // FormPatientRegister
             // 
+            this.AcceptButton = this.btnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(570, 323);
             this.Controls.Add(this.btnRegister);
@@ -194,6 +196,7 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FormPatientRegister";
             this.Text = "Hasta Kayıt Ekranı";
             this.ResumeLayout(false);

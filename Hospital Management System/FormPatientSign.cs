@@ -21,7 +21,7 @@ namespace Hospital_Management_System
         {
             FormPatientRegister formPatient = new FormPatientRegister();
             formPatient.Show();
-            this.Hide();
+            
         }
     }
 }

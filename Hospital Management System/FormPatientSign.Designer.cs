@@ -95,7 +95,7 @@
             this.btnSignIn.Location = new System.Drawing.Point(145, 296);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(199, 42);
-            this.btnSignIn.TabIndex = 5;
+            this.btnSignIn.TabIndex = 4;
             this.btnSignIn.Text = "GİRİŞ YAP";
             this.btnSignIn.UseVisualStyleBackColor = false;
             // 
@@ -107,13 +107,14 @@
             this.lblRegister.Location = new System.Drawing.Point(350, 232);
             this.lblRegister.Name = "lblRegister";
             this.lblRegister.Size = new System.Drawing.Size(65, 23);
-            this.lblRegister.TabIndex = 6;
+            this.lblRegister.TabIndex = 3;
             this.lblRegister.TabStop = true;
             this.lblRegister.Text = "Üye Ol";
             this.lblRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblRegister_LinkClicked);
             // 
             // FormPatientSign
             // 
+            this.AcceptButton = this.btnSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
