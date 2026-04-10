@@ -48,6 +48,7 @@
             this.btnSignIn.TabIndex = 12;
             this.btnSignIn.Text = "GİRİŞ YAP";
             this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // txtPassword
             // 
@@ -55,6 +56,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(142, 31);
             this.txtPassword.TabIndex = 10;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtTC
             // 
@@ -100,6 +102,7 @@
             // 
             // FormSecretarySignIn
             // 
+            this.AcceptButton = this.btnSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;

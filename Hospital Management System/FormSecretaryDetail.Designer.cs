@@ -105,7 +105,7 @@
             // lblTC
             // 
             this.lblTC.AutoSize = true;
-            this.lblTC.Location = new System.Drawing.Point(102, 56);
+            this.lblTC.Location = new System.Drawing.Point(102, 55);
             this.lblTC.Name = "lblTC";
             this.lblTC.Size = new System.Drawing.Size(120, 23);
             this.lblTC.TabIndex = 1;
@@ -412,6 +412,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormSecretaryDetail";
             this.Text = "Sekreter Detay Ekranı";
+            this.Load += new System.EventHandler(this.FormSecretaryDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
