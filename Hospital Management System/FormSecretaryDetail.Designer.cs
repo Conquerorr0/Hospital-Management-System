@@ -38,7 +38,6 @@
             this.btnCreateAnnouncment = new System.Windows.Forms.Button();
             this.txtAnnouncment = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnUpdateAppointment = new System.Windows.Forms.Button();
             this.btnCreateAppointment = new System.Windows.Forms.Button();
             this.cbStatus = new System.Windows.Forms.CheckBox();
             this.txtTC = new System.Windows.Forms.MaskedTextBox();
@@ -144,6 +143,7 @@
             this.btnCreateAnnouncment.TabIndex = 8;
             this.btnCreateAnnouncment.Text = "OLUŞTUR";
             this.btnCreateAnnouncment.UseVisualStyleBackColor = false;
+            this.btnCreateAnnouncment.Click += new System.EventHandler(this.btnCreateAnnouncment_Click);
             // 
             // txtAnnouncment
             // 
@@ -155,7 +155,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnUpdateAppointment);
             this.groupBox3.Controls.Add(this.btnCreateAppointment);
             this.groupBox3.Controls.Add(this.cbStatus);
             this.groupBox3.Controls.Add(this.txtTC);
@@ -177,18 +176,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
             // 
-            // btnUpdateAppointment
-            // 
-            this.btnUpdateAppointment.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnUpdateAppointment.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUpdateAppointment.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnUpdateAppointment.Location = new System.Drawing.Point(31, 314);
-            this.btnUpdateAppointment.Name = "btnUpdateAppointment";
-            this.btnUpdateAppointment.Size = new System.Drawing.Size(192, 34);
-            this.btnUpdateAppointment.TabIndex = 16;
-            this.btnUpdateAppointment.Text = "GÜNCELLE";
-            this.btnUpdateAppointment.UseVisualStyleBackColor = false;
-            // 
             // btnCreateAppointment
             // 
             this.btnCreateAppointment.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -200,6 +187,7 @@
             this.btnCreateAppointment.TabIndex = 9;
             this.btnCreateAppointment.Text = "KAYDET";
             this.btnCreateAppointment.UseVisualStyleBackColor = false;
+            this.btnCreateAppointment.Click += new System.EventHandler(this.btnCreateAppointment_Click);
             // 
             // cbStatus
             // 
@@ -235,6 +223,7 @@
             this.cmbField.Name = "cmbField";
             this.cmbField.Size = new System.Drawing.Size(124, 31);
             this.cmbField.TabIndex = 12;
+            this.cmbField.SelectedIndexChanged += new System.EventHandler(this.cmbField_SelectedIndexChanged);
             // 
             // txtTime
             // 
@@ -306,20 +295,23 @@
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox4.Location = new System.Drawing.Point(502, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(413, 214);
+            this.groupBox4.Size = new System.Drawing.Size(641, 214);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Branşlar";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(3, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(407, 184);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(635, 184);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox5
@@ -329,20 +321,23 @@
             this.groupBox5.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox5.Location = new System.Drawing.Point(502, 232);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(413, 214);
+            this.groupBox5.Size = new System.Drawing.Size(641, 214);
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Doktorlar";
             // 
             // dataGridView3
             // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView3.Location = new System.Drawing.Point(3, 27);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(407, 184);
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(635, 184);
             this.dataGridView3.TabIndex = 1;
             // 
             // groupBox6
@@ -354,7 +349,7 @@
             this.groupBox6.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox6.Location = new System.Drawing.Point(12, 446);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(903, 100);
+            this.groupBox6.Size = new System.Drawing.Size(1131, 100);
             this.groupBox6.TabIndex = 19;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
@@ -364,7 +359,7 @@
             this.btnOppointmentPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnOppointmentPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOppointmentPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnOppointmentPanel.Location = new System.Drawing.Point(685, 44);
+            this.btnOppointmentPanel.Location = new System.Drawing.Point(915, 44);
             this.btnOppointmentPanel.Name = "btnOppointmentPanel";
             this.btnOppointmentPanel.Size = new System.Drawing.Size(192, 34);
             this.btnOppointmentPanel.TabIndex = 11;
@@ -376,7 +371,7 @@
             this.btnFieldPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnFieldPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnFieldPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnFieldPanel.Location = new System.Drawing.Point(344, 44);
+            this.btnFieldPanel.Location = new System.Drawing.Point(468, 44);
             this.btnFieldPanel.Name = "btnFieldPanel";
             this.btnFieldPanel.Size = new System.Drawing.Size(192, 34);
             this.btnFieldPanel.TabIndex = 10;
@@ -394,13 +389,14 @@
             this.btnDoctorPanel.TabIndex = 9;
             this.btnDoctorPanel.Text = "DOKTOR PANELİ";
             this.btnDoctorPanel.UseVisualStyleBackColor = false;
+            this.btnDoctorPanel.Click += new System.EventHandler(this.btnDoctorPanel_Click);
             // 
             // FormSecretaryDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(927, 554);
+            this.ClientSize = new System.Drawing.Size(1155, 554);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -450,7 +446,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCreateAppointment;
-        private System.Windows.Forms.Button btnUpdateAppointment;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox5;

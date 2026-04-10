@@ -218,9 +218,11 @@
             // 
             this.dataAppointmentHistory.AllowUserToAddRows = false;
             this.dataAppointmentHistory.AllowUserToDeleteRows = false;
+            this.dataAppointmentHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataAppointmentHistory.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataAppointmentHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataAppointmentHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataAppointmentHistory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataAppointmentHistory.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataAppointmentHistory.Location = new System.Drawing.Point(3, 27);
             this.dataAppointmentHistory.Name = "dataAppointmentHistory";
@@ -244,6 +246,7 @@
             // 
             this.dataActiveAppointments.AllowUserToAddRows = false;
             this.dataActiveAppointments.AllowUserToDeleteRows = false;
+            this.dataActiveAppointments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataActiveAppointments.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataActiveAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataActiveAppointments.Dock = System.Windows.Forms.DockStyle.Fill;
