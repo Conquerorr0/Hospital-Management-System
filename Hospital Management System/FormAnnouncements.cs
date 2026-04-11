@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace Hospital_Management_System
 {
-    public partial class FormAppointmentList : Form
+    public partial class FormAnnouncements : Form
     {
         DatabaseConnection db = null;
-        public FormAppointmentList()
+        public FormAnnouncements()
         {
             InitializeComponent();
             db = new DatabaseConnection();
             DataTable dataTable = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_appointments", db.connection());
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM tbl_announcement", db.connection());
             adapter.Fill(dataTable);
             dataGridView1.DataSource = dataTable;
             db.connection().Close();

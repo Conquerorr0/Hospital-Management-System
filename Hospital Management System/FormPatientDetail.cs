@@ -137,7 +137,7 @@ namespace Hospital_Management_System
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO tbl_appointments (date, time, field, doctor, status, patient_tc) VALUES (@date, @time, @field, @doctor, @status, @patient_tc)", db.connection());
+            SqlCommand cmd = new SqlCommand("INSERT INTO tbl_appointments (date, time, field, doctor, status, patient_tc, patient_complaint) VALUES (@date, @time, @field, @doctor, @status, @patient_tc, @patient_complaint)", db.connection());
 
             cmd.Parameters.AddWithValue("@date", DateTime.Now.ToString("dd.MM.yyyy"));
             cmd.Parameters.AddWithValue("@time", DateTime.Now.ToString("HH:mm"));
@@ -145,6 +145,7 @@ namespace Hospital_Management_System
             cmd.Parameters.AddWithValue("@doctor", cmbDoctor.Text);
             cmd.Parameters.AddWithValue("@status", true);
             cmd.Parameters.AddWithValue("@patient_tc", lblTC.Text);
+            cmd.Parameters.AddWithValue("@patient_complaint", txtComplaint.Text);
 
             cmd.ExecuteNonQuery();
 

@@ -55,6 +55,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnAnnouncments = new System.Windows.Forms.Button();
             this.btnOppointmentPanel = new System.Windows.Forms.Button();
             this.btnFieldPanel = new System.Windows.Forms.Button();
             this.btnDoctorPanel = new System.Windows.Forms.Button();
@@ -342,6 +343,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.btnAnnouncments);
             this.groupBox6.Controls.Add(this.btnOppointmentPanel);
             this.groupBox6.Controls.Add(this.btnFieldPanel);
             this.groupBox6.Controls.Add(this.btnDoctorPanel);
@@ -354,12 +356,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
+            // btnAnnouncments
+            // 
+            this.btnAnnouncments.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAnnouncments.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnnouncments.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAnnouncments.Location = new System.Drawing.Point(914, 44);
+            this.btnAnnouncments.Name = "btnAnnouncments";
+            this.btnAnnouncments.Size = new System.Drawing.Size(192, 34);
+            this.btnAnnouncments.TabIndex = 12;
+            this.btnAnnouncments.Text = "DUYURU LİSTESİ";
+            this.btnAnnouncments.UseVisualStyleBackColor = false;
+            this.btnAnnouncments.Click += new System.EventHandler(this.btnAnnouncments_Click);
+            // 
             // btnOppointmentPanel
             // 
             this.btnOppointmentPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnOppointmentPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOppointmentPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnOppointmentPanel.Location = new System.Drawing.Point(915, 44);
+            this.btnOppointmentPanel.Location = new System.Drawing.Point(628, 44);
             this.btnOppointmentPanel.Name = "btnOppointmentPanel";
             this.btnOppointmentPanel.Size = new System.Drawing.Size(192, 34);
             this.btnOppointmentPanel.TabIndex = 11;
@@ -372,7 +387,7 @@
             this.btnFieldPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnFieldPanel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnFieldPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnFieldPanel.Location = new System.Drawing.Point(468, 44);
+            this.btnFieldPanel.Location = new System.Drawing.Point(326, 44);
             this.btnFieldPanel.Name = "btnFieldPanel";
             this.btnFieldPanel.Size = new System.Drawing.Size(192, 34);
             this.btnFieldPanel.TabIndex = 10;
@@ -456,5 +471,6 @@
         private System.Windows.Forms.Button btnOppointmentPanel;
         private System.Windows.Forms.Button btnFieldPanel;
         private System.Windows.Forms.Button btnDoctorPanel;
+        private System.Windows.Forms.Button btnAnnouncments;
     }
 }

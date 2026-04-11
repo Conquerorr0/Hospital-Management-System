@@ -149,5 +149,11 @@ namespace Hospital_Management_System
             FormAppointmentList list = new FormAppointmentList();
             list.Show();
         }
+
+        private void btnAnnouncments_Click(object sender, EventArgs e)
+        {
+            FormAnnouncements announcements = new FormAnnouncements();
+            announcements.Show();
+        }
     }
 }

@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConnection.cs" />
-    <Compile Include="FormAnnouncment.cs">
+    <Compile Include="FormAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAnnouncment.Designer.cs">
-      <DependentUpon>FormAnnouncment.cs</DependentUpon>
+    <Compile Include="FormAnnouncements.Designer.cs">
+      <DependentUpon>FormAnnouncements.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAppointmentList.cs">
       <SubType>Form</SubType>
@@ -133,8 +133,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAnnouncment.resx">
-      <DependentUpon>FormAnnouncment.cs</DependentUpon>
+    <EmbeddedResource Include="FormAnnouncements.resx">
+      <DependentUpon>FormAnnouncements.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAppointmentList.resx">
       <DependentUpon>FormAppointmentList.cs</DependentUpon>
