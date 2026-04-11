@@ -377,6 +377,7 @@
             this.btnFieldPanel.TabIndex = 10;
             this.btnFieldPanel.Text = "BRANŞ PANELİ";
             this.btnFieldPanel.UseVisualStyleBackColor = false;
+            this.btnFieldPanel.Click += new System.EventHandler(this.btnFieldPanel_Click);
             // 
             // btnDoctorPanel
             // 

@@ -137,5 +137,11 @@ namespace Hospital_Management_System
             FormDoctorPanel formDoctor = new FormDoctorPanel();
             formDoctor.Show();
         }
+
+        private void btnFieldPanel_Click(object sender, EventArgs e)
+        {
+            FormField formField = new FormField();
+            formField.Show();
+        }
     }
 }

@@ -139,13 +139,18 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(274, 65);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(356, 173);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(660, 255);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // btnAdd
             // 
@@ -158,6 +163,7 @@
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "EKLE";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -170,25 +176,27 @@
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "SİL";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.ForestGreen;
             this.btnUpdate.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpdate.Location = new System.Drawing.Point(119, 287);
+            this.btnUpdate.Location = new System.Drawing.Point(118, 287);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(139, 33);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "GÜNCELLE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // FormDoctorPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(637, 355);
+            this.ClientSize = new System.Drawing.Size(946, 355);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
@@ -208,6 +216,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "FormDoctorPanel";
             this.Text = "Doktor Paneli";
+            this.Load += new System.EventHandler(this.FormDoctorPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
