@@ -365,6 +365,7 @@
             this.btnOppointmentPanel.TabIndex = 11;
             this.btnOppointmentPanel.Text = "RANDEVU LİSTESİ";
             this.btnOppointmentPanel.UseVisualStyleBackColor = false;
+            this.btnOppointmentPanel.Click += new System.EventHandler(this.btnOppointmentPanel_Click);
             // 
             // btnFieldPanel
             // 

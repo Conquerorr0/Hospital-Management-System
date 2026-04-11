@@ -143,5 +143,11 @@ namespace Hospital_Management_System
             FormField formField = new FormField();
             formField.Show();
         }
+
+        private void btnOppointmentPanel_Click(object sender, EventArgs e)
+        {
+            FormAppointmentList list = new FormAppointmentList();
+            list.Show();
+        }
     }
 }
