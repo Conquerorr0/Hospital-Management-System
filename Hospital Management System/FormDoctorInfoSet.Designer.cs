@@ -146,6 +146,7 @@
             this.btnRegister.TabIndex = 38;
             this.btnRegister.Text = "GÜNCELLE";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // FormDoctorInfoSet
             // 

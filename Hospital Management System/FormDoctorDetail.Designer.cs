@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDoctorDetail));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblName = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@
             this.dataAppointmentsList = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnAnnouncment = new System.Windows.Forms.Button();
-            this.btnInternet = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnSetInfo = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -134,19 +135,32 @@
             // 
             // dataAppointmentsList
             // 
+            this.dataAppointmentsList.AllowUserToAddRows = false;
+            this.dataAppointmentsList.AllowUserToDeleteRows = false;
+            this.dataAppointmentsList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataAppointmentsList.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataAppointmentsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataAppointmentsList.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataAppointmentsList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataAppointmentsList.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataAppointmentsList.Location = new System.Drawing.Point(3, 27);
             this.dataAppointmentsList.Name = "dataAppointmentsList";
+            this.dataAppointmentsList.ReadOnly = true;
             this.dataAppointmentsList.Size = new System.Drawing.Size(519, 497);
             this.dataAppointmentsList.TabIndex = 0;
+            this.dataAppointmentsList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataAppointmentsList_CellDoubleClick);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnAnnouncment);
-            this.groupBox4.Controls.Add(this.btnInternet);
+            this.groupBox4.Controls.Add(this.btnExit);
             this.groupBox4.Controls.Add(this.btnSetInfo);
             this.groupBox4.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -167,17 +181,19 @@
             this.btnAnnouncment.TabIndex = 1;
             this.btnAnnouncment.Text = "DUYURULAR";
             this.btnAnnouncment.UseVisualStyleBackColor = false;
+            this.btnAnnouncment.Click += new System.EventHandler(this.btnAnnouncment_Click);
             // 
-            // btnInternet
+            // btnExit
             // 
-            this.btnInternet.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnInternet.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInternet.Location = new System.Drawing.Point(11, 112);
-            this.btnInternet.Name = "btnInternet";
-            this.btnInternet.Size = new System.Drawing.Size(222, 35);
-            this.btnInternet.TabIndex = 2;
-            this.btnInternet.Text = "İNTERNET";
-            this.btnInternet.UseVisualStyleBackColor = false;
+            this.btnExit.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExit.Location = new System.Drawing.Point(11, 112);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(222, 35);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "ÇIKIŞ YAP";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSetInfo
             // 
@@ -189,6 +205,7 @@
             this.btnSetInfo.TabIndex = 0;
             this.btnSetInfo.Text = "BİLGİ DÜZENLE";
             this.btnSetInfo.UseVisualStyleBackColor = false;
+            this.btnSetInfo.Click += new System.EventHandler(this.btnSetInfo_Click);
             // 
             // FormDoctorDetail
             // 
@@ -228,7 +245,7 @@
         private System.Windows.Forms.RichTextBox txtDetail;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnAnnouncment;
-        private System.Windows.Forms.Button btnInternet;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSetInfo;
     }
 }
